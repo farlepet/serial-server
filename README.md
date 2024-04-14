@@ -10,10 +10,13 @@ Intended hardware features
   * USB (also doubles as serial debug port)
   * External power
 * WiFi connection
-  * Undecided on specific chip, doesn't need to be very performant, might use
-    as ESP-32 along with something like [esp-hosted](https://github.com/espressif/esp-hosted)
+  * Planning on ESP32-C3 via SPI (and maybe UART as fallback)
+  * Use [esp-hosted](https://github.com/espressif/esp-hosted) to interface with Linux
+  * Likely won't need any external flash, may design in the option just in case
 * Ethernet connection
-  * At least 10/100, undecided on specific PHY
+  * At least 10/100, undecided on specifics, SG2002 should already have a PHY,
+    so should just need the port and magnetics (if not integrated, needs to
+    support PoE).
 * Linux-capable CPU
   * Planning on using SG2002 RISC-V SOC
   * Running Linux off of micro-SD card
@@ -28,4 +31,4 @@ Intended hardware features
   * Possible ring-indicator LED
   * Possible "remote access active" LED
 * Possibly integrating a security chip like the ATECC
-
+* Possibly hardware watchdog
