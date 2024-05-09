@@ -2154,6 +2154,16 @@
 		)
 		(uuid "5b7b939e-2d13-4b03-b187-34bb669635a0")
 	)
+	(text "Swapping RX/TX naming to make it\nclearer on the SoC side."
+		(exclude_from_sim no)
+		(at 154.178 86.106 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "a51b9162-4262-4d1f-872f-8f74fa6d2d87")
+	)
 	(text "NOTE: All DE9_* netlabels are from DTE perspective,\nwhile the default operating mode here is DCE.\nDCE was chosen as default, as it is the more likely\nscenario in which RI would be useful."
 		(exclude_from_sim no)
 		(at 232.41 22.86 0)
@@ -2164,6 +2174,50 @@
 			(justify left bottom)
 		)
 		(uuid "dc846af2-7c3b-4db1-9517-ecfd28f9bc21")
+	)
+	(label "RS232_DTR"
+		(at 156.21 80.01 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "0c8a2d45-d010-4182-90e3-bedbabed3e23")
+	)
+	(label "RS232_RXD"
+		(at 156.21 77.47 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "102c6e4c-d50e-4ed1-8700-5839f83cd0cb")
+	)
+	(label "RS232_DSR"
+		(at 156.21 60.96 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "3e3b66b3-ea90-4d24-9238-3a08b2a36bb8")
+	)
+	(label "RS232_RI"
+		(at 156.21 68.58 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "4798b0d2-2662-42b4-838a-f4ed2400dfb9")
 	)
 	(label "DE9_RI"
 		(at 245.11 46.99 0)
@@ -2187,6 +2241,17 @@
 		)
 		(uuid "5cff3c2b-49eb-4e45-a473-937a6b2c0b06")
 	)
+	(label "RS232_CTS"
+		(at 156.21 66.04 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "6cb0d018-39bd-49bf-a8e2-ac1efa675672")
+	)
 	(label "DE9_DTR"
 		(at 245.11 44.45 0)
 		(fields_autoplaced yes)
@@ -2197,6 +2262,17 @@
 			(justify left bottom)
 		)
 		(uuid "7b966701-47aa-4282-be3a-ddd6dd18b3cd")
+	)
+	(label "RS232_TXD"
+		(at 156.21 63.5 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "802ca607-9c77-4158-a4fb-384abcfb6feb")
 	)
 	(label "DE9_DCD"
 		(at 245.11 29.21 0)
@@ -2209,6 +2285,17 @@
 		)
 		(uuid "8aedad75-9142-4985-bb7f-ebf85d495d0b")
 	)
+	(label "RS232_DCD"
+		(at 156.21 58.42 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "a95db0be-8d0f-4c72-bd54-a30efce8f4b2")
+	)
 	(label "DE9_TXD"
 		(at 245.11 39.37 0)
 		(fields_autoplaced yes)
@@ -2219,6 +2306,17 @@
 			(justify left bottom)
 		)
 		(uuid "bb910eca-6260-4725-8e24-5c5ae23fbed8")
+	)
+	(label "RS232_RTS"
+		(at 156.21 74.93 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "c1609725-b8d9-406d-9859-54292529bce1")
 	)
 	(label "DE9_RTS"
 		(at 245.11 36.83 0)

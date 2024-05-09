@@ -3537,6 +3537,28 @@
 		)
 		(uuid "efab2c17-d85d-4314-ae41-885973786956")
 	)
+	(label "I2C_SDA"
+		(at 88.9 88.9 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "1229bc2a-e136-432e-b6c3-29436c1e2f38")
+	)
+	(label "I2C_SCL"
+		(at 88.9 86.36 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "542507af-8717-41c8-a627-006e6a6c9e27")
+	)
 	(symbol
 		(lib_id "power:+1V8")
 		(at 158.75 91.44 270)
