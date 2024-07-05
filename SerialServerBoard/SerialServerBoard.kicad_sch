@@ -1650,6 +1650,12 @@
 		(uuid "36500e09-be4c-4c3f-9bf2-1842af760986")
 	)
 	(junction
+		(at 43.18 87.63)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4cc279e4-5dc4-4d8a-8701-3b6182d0b1cd")
+	)
+	(junction
 		(at 31.75 180.34)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1699,6 +1705,16 @@
 	)
 	(wire
 		(pts
+			(xy 45.72 90.17) (xy 45.72 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1262cee3-2e08-4b3f-8ff7-385efe1cc164")
+	)
+	(wire
+		(pts
 			(xy 252.73 77.47) (xy 254 77.47)
 		)
 		(stroke
@@ -1719,6 +1735,16 @@
 	)
 	(wire
 		(pts
+			(xy 40.64 99.06) (xy 40.64 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2c1d0f6c-200f-4033-90f4-a7e6048225ef")
+	)
+	(wire
+		(pts
 			(xy 44.45 163.83) (xy 44.45 171.45)
 		)
 		(stroke
@@ -1736,6 +1762,16 @@
 			(type default)
 		)
 		(uuid "404f4ab8-7972-4890-b344-5cd7e4439010")
+	)
+	(wire
+		(pts
+			(xy 34.29 101.6) (xy 45.72 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "445d5ea5-68ba-4e7d-aa67-bbc2e364d12f")
 	)
 	(wire
 		(pts
@@ -1779,6 +1815,16 @@
 	)
 	(wire
 		(pts
+			(xy 40.64 87.63) (xy 40.64 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "663add78-253a-425c-8a5d-aeccab952886")
+	)
+	(wire
+		(pts
 			(xy 252.73 20.32) (xy 254 20.32)
 		)
 		(stroke
@@ -1816,6 +1862,16 @@
 			(type default)
 		)
 		(uuid "748b6a9b-12ba-4870-a470-88532359d170")
+	)
+	(wire
+		(pts
+			(xy 45.72 101.6) (xy 45.72 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "750aca7d-eb6b-4d51-b165-2258946ad70e")
 	)
 	(wire
 		(pts
@@ -1876,6 +1932,16 @@
 			(type default)
 		)
 		(uuid "9c310d5c-f8a5-4d5f-9a8b-78fd08172a31")
+	)
+	(wire
+		(pts
+			(xy 34.29 99.06) (xy 40.64 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a332cb67-8df3-4d5a-87f4-819400347d32")
 	)
 	(wire
 		(pts
@@ -1979,6 +2045,16 @@
 	)
 	(wire
 		(pts
+			(xy 43.18 87.63) (xy 40.64 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e2687c35-bbd4-4dba-8307-2ecc14b832f0")
+	)
+	(wire
+		(pts
 			(xy 252.73 96.52) (xy 254 96.52)
 		)
 		(stroke
@@ -1986,6 +2062,16 @@
 			(type default)
 		)
 		(uuid "e440c09d-ec1c-417a-a91e-a453e3e72e87")
+	)
+	(wire
+		(pts
+			(xy 45.72 87.63) (xy 43.18 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e7b07cc5-4fe8-4eed-8c91-500d16b700b7")
 	)
 	(wire
 		(pts
@@ -2017,6 +2103,16 @@
 		)
 		(uuid "fcece4a5-9961-46fa-8cb2-04b4c554c33a")
 	)
+	(text "TODO: Determine more optimal values"
+		(exclude_from_sim no)
+		(at 37.846 103.886 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "154c5823-993f-471c-96fc-e8bd22c6bd61")
+	)
 	(text "5V USB | VIN | PoE\n +-> 3v3 Regulator\n       +-> 0v9 Regulator\n       |     +-> Core\n       +-> 0v9 Regulator\n       |     +-> DDR\n       +-> 1v35 Regulator - Must not come up before 0v9 (control via SEQ1?)\n       |     +-> VDDQ\n       +-> 1v8 Regulator - Must not come up before 0v9 (control via SEQ1?)\n       |     +-> RTC\n       |     +-> MIPI\n       |     +-> USB PLL ETH\n       +-> 1v8 Good Switch (control via SEQ2?)\n             +-> SD0 VDDIO\n             +-> SD1 VDDIO\n             +-> ETH USB VDD33A\n\nTODO: Double-check datasheet"
 		(exclude_from_sim no)
 		(at 13.97 50.8 0)
@@ -2030,6 +2126,17 @@
 		(uuid "b5aebff0-46c2-4080-8d12-f3b638fc535d")
 	)
 	(label "I2C_SCL"
+		(at 34.29 99.06 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "29b52f4c-3791-4ef8-bbb7-04d6eba9aeb0")
+	)
+	(label "I2C_SCL"
 		(at 40.64 77.47 180)
 		(fields_autoplaced yes)
 		(effects
@@ -2039,6 +2146,17 @@
 			(justify right bottom)
 		)
 		(uuid "85392352-b23e-4d9a-aeb2-f19efbbe83e0")
+	)
+	(label "I2C_SDA"
+		(at 34.29 101.6 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "ab61cfa7-311e-4d61-8626-efca19eae76a")
 	)
 	(label "I2C_SDA"
 		(at 40.64 74.93 180)
@@ -2251,6 +2369,75 @@
 			(project "SerialServerBoard"
 				(path "/fff4edd7-7765-4881-b8c8-325c8be7c8ba"
 					(reference "#PWR031")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 45.72 92.71 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "12ebdcee-c072-469b-a467-eed9ab255a8a")
+		(property "Reference" "R39"
+			(at 43.18 96.52 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4k7"
+			(at 43.18 92.71 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 45.72 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 45.72 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 45.72 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "5f0871b4-b0ee-4c5a-824e-851f97e6c02a")
+		)
+		(pin "1"
+			(uuid "2ec1f297-b771-42eb-b992-cfd804d6d6cf")
+		)
+		(instances
+			(project "SerialServerBoard"
+				(path "/fff4edd7-7765-4881-b8c8-325c8be7c8ba"
+					(reference "R39")
 					(unit 1)
 				)
 			)
@@ -2726,6 +2913,72 @@
 			(project "SerialServerBoard"
 				(path "/fff4edd7-7765-4881-b8c8-325c8be7c8ba"
 					(reference "#PWR034")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Symbols:+3V3_SW")
+		(at 43.18 87.63 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4e96d794-e911-4353-be86-682c3e17b8dd")
+		(property "Reference" "#PWR065"
+			(at 43.18 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3_SW"
+			(at 43.18 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 43.18 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 43.18 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3_SW\""
+			(at 43.18 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d115dc54-1783-4a76-8cf3-fc97f8850165")
+		)
+		(instances
+			(project "SerialServerBoard"
+				(path "/fff4edd7-7765-4881-b8c8-325c8be7c8ba"
+					(reference "#PWR065")
 					(unit 1)
 				)
 			)
@@ -3690,6 +3943,75 @@
 			(project "SerialServerBoard"
 				(path "/fff4edd7-7765-4881-b8c8-325c8be7c8ba"
 					(reference "D4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 40.64 92.71 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "afcd23a3-8588-4c33-9716-876ecaf34837")
+		(property "Reference" "R38"
+			(at 38.1 96.52 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4k7"
+			(at 38.1 92.71 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 40.64 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 40.64 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 40.64 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "47a9ffb8-cc03-431d-b5a5-b890368364ea")
+		)
+		(pin "1"
+			(uuid "e1039bb9-60e4-4730-8450-931df01b27d5")
+		)
+		(instances
+			(project "SerialServerBoard"
+				(path "/fff4edd7-7765-4881-b8c8-325c8be7c8ba"
+					(reference "R38")
 					(unit 1)
 				)
 			)

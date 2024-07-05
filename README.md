@@ -26,9 +26,16 @@ Intended hardware features
     ring indicator would be useful. NULL-modem cable/adapter can be used to switch
     to DTE pinout.
   * Using MAX3237 transceiver to allow full functionality while in DCE mode
+  * Headers availble to allow for custom daughter boards for different protocols
 * Status LEDs
   * Separate serlal RX and TX LEDs
   * Possible ring-indicator LED
   * Possible "remote access active" LED
 * Possibly integrating a security chip like the ATECC
 * Possibly hardware watchdog
+
+Use of third-party symbols/footprints
+-------------------------------------
+
+The following footprints were obtained from Digi-Key:
+ * Amphenol 10067099-400LF: https://www.digikey.com/en/models/4238740

@@ -749,6 +749,128 @@
 				)
 			)
 		)
+		(symbol "Device:R_Small"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0.254) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 0.762 0.508 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "R_Small"
+				(at 0.762 -1.016 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor, small symbol"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_Small_0_1"
+				(rectangle
+					(start -0.762 1.778)
+					(end 0.762 -1.778)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_Small_1_1"
+				(pin passive line
+					(at 0 2.54 270)
+					(length 0.762)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 0.762)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Symbols:+3V3_SW"
 			(power)
 			(pin_names
@@ -1795,6 +1917,16 @@
 	)
 	(wire
 		(pts
+			(xy 125.73 35.56) (xy 125.73 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "28f4ba58-cdf5-4d3c-b10b-8a0508e86a44")
+	)
+	(wire
+		(pts
 			(xy 114.3 97.79) (xy 130.81 97.79)
 		)
 		(stroke
@@ -2025,6 +2157,26 @@
 	)
 	(wire
 		(pts
+			(xy 125.73 43.18) (xy 125.73 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bcc2a2e6-d592-417c-9a0c-6d9640089294")
+	)
+	(wire
+		(pts
+			(xy 125.73 46.99) (xy 130.81 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c45a0cc7-3538-4593-826c-6d2dc36e548b")
+	)
+	(wire
+		(pts
 			(xy 121.92 111.76) (xy 121.92 95.25)
 		)
 		(stroke
@@ -2103,6 +2255,16 @@
 		)
 		(uuid "ff00c7a6-20d7-4fd3-907f-78a622c49cd0")
 	)
+	(text "NOTE: Must use a variant of ESP32-C3 with internal flash"
+		(exclude_from_sim no)
+		(at 102.616 64.516 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "0f6ac982-d93c-4ad2-a780-7a0a7c63d992")
+	)
 	(text "TODO: Check details on power supply\n - Should VDDA or any other rails have a specific decoupling?\n - Should VDDA and VDD_SPI be at 3v3?"
 		(exclude_from_sim no)
 		(at 181.102 58.42 0)
@@ -2146,6 +2308,76 @@
 			(justify right bottom)
 		)
 		(uuid "6c9ac812-329b-4f2e-b3fd-746715255c22")
+	)
+	(symbol
+		(lib_id "Device:R_Small")
+		(at 125.73 40.64 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0e8f31ca-c543-4e42-bdb1-2021be9c1a0a")
+		(property "Reference" "R40"
+			(at 128.27 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4k7"
+			(at 128.27 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+			(at 125.73 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 125.73 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 125.73 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "59f2e768-29d6-4f33-99f0-6c8f544e6810")
+		)
+		(pin "2"
+			(uuid "99d25c09-3f28-43ad-b8ac-8bd98dbaa5ba")
+		)
+		(instances
+			(project "SerialServerBoard"
+				(path "/fff4edd7-7765-4881-b8c8-325c8be7c8ba/d4043790-84bf-4077-974b-7325bae32458"
+					(reference "R40")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "Symbols:+3V3_SW")
@@ -2734,6 +2966,72 @@
 			(project "SerialServerBoard"
 				(path "/fff4edd7-7765-4881-b8c8-325c8be7c8ba/d4043790-84bf-4077-974b-7325bae32458"
 					(reference "J10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Symbols:+3V3_SW")
+		(at 125.73 35.56 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d0c1d9d5-efaf-466f-b9f7-b66c5094ab72")
+		(property "Reference" "#PWR066"
+			(at 125.73 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3_SW"
+			(at 125.73 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 125.73 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 125.73 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3_SW\""
+			(at 125.73 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fc9dc5a0-d19a-4e05-acc9-3e2d13be53ee")
+		)
+		(instances
+			(project "SerialServerBoard"
+				(path "/fff4edd7-7765-4881-b8c8-325c8be7c8ba/d4043790-84bf-4077-974b-7325bae32458"
+					(reference "#PWR066")
 					(unit 1)
 				)
 			)

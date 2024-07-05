@@ -5,6 +5,108 @@
 	(uuid "d1679935-aafa-4f41-90cd-7f453dbfb8e5")
 	(paper "A4")
 	(lib_symbols
+		(symbol "Connector:TestPoint"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0.762) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Device:C_Small"
 			(pin_numbers hide)
 			(pin_names
@@ -2846,6 +2948,16 @@
 	)
 	(wire
 		(pts
+			(xy 83.82 168.91) (xy 88.9 168.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "24b65116-d5cf-44fa-a107-6c7980a016a7")
+	)
+	(wire
+		(pts
 			(xy 154.94 91.44) (xy 158.75 91.44)
 		)
 		(stroke
@@ -3515,6 +3627,16 @@
 		)
 		(uuid "4d48ee17-4207-48db-a991-2922ab5abae1")
 	)
+	(text "Datasheet mentions a 32.768 kHz xtal for the RTC,\nbut there doesn't seem to be any pins for it."
+		(exclude_from_sim no)
+		(at 44.45 27.94 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "a2b53fbe-ca72-4d48-8c36-fbb0f1f69635")
+	)
 	(text "Duo 256M has PWR_VBAT_DET on voltage divider:\n 3v3 - 4.7k - PWR_VBAT_DET - 3.3k - GND\n Pin is pulled to ground when a RUN pin goes high - probably a disable/reset pin"
 		(exclude_from_sim no)
 		(at 198.12 165.1 0)
@@ -3525,6 +3647,16 @@
 			(justify left bottom)
 		)
 		(uuid "c01de543-4f42-4cfa-935a-a18214978203")
+	)
+	(text "25 MHz 1v8"
+		(exclude_from_sim no)
+		(at 98.044 164.338 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "e8d541f5-bef2-4c8c-8513-680f6da994ea")
 	)
 	(text "VCORE = 0.9V"
 		(exclude_from_sim no)
@@ -3537,6 +3669,17 @@
 		)
 		(uuid "efab2c17-d85d-4314-ae41-885973786956")
 	)
+	(label "SD_CMD"
+		(at 88.9 26.67 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "0aa7f6f0-99c4-436c-b1fd-78d9faba73ec")
+	)
 	(label "I2C_SDA"
 		(at 88.9 88.9 180)
 		(fields_autoplaced yes)
@@ -3548,6 +3691,61 @@
 		)
 		(uuid "1229bc2a-e136-432e-b6c3-29436c1e2f38")
 	)
+	(label "USB_DET"
+		(at 88.9 142.24 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "13324401-42d2-4d08-a864-a11bf2b58ca1")
+	)
+	(label "USB_DM"
+		(at 88.9 147.32 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "1421eb0d-cef4-4237-938f-42df93b3fe4f")
+	)
+	(label "ETH_RXN"
+		(at 88.9 95.25 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "3abaa194-13e7-4261-9d7b-3e490271c013")
+	)
+	(label "SD_D1"
+		(at 88.9 31.75 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "4bd61d2f-863c-4d4d-9b10-a2859b57e204")
+	)
+	(label "USB_DP"
+		(at 88.9 144.78 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "4f2eee72-151f-4369-89d1-39b19f41f8f8")
+	)
 	(label "I2C_SCL"
 		(at 88.9 86.36 180)
 		(fields_autoplaced yes)
@@ -3558,6 +3756,94 @@
 			(justify right bottom)
 		)
 		(uuid "542507af-8717-41c8-a627-006e6a6c9e27")
+	)
+	(label "SD_CD"
+		(at 88.9 39.37 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "58718cf4-1eec-4bb6-b01b-de08e0b8e295")
+	)
+	(label "SD_CLK"
+		(at 88.9 24.13 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "5fb94daa-fea0-4efd-a327-085b61917090")
+	)
+	(label "ETH_TXP"
+		(at 88.9 102.87 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "6aff33fb-0aeb-4b9d-b8ce-6c120222e105")
+	)
+	(label "ETH_RXP"
+		(at 88.9 97.79 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "b636a675-3d8e-47d6-a14f-efe3f2fff8ed")
+	)
+	(label "SD_D0"
+		(at 88.9 29.21 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "c69c9632-ec5b-4939-96c0-e63bcbed63de")
+	)
+	(label "ETH_TXN"
+		(at 88.9 100.33 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "d260d9cf-4503-4f89-b034-452775094ae9")
+	)
+	(label "SD_D2"
+		(at 88.9 34.29 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "f38a961d-4a95-4b09-aefc-5bea2e6d9ba3")
+	)
+	(label "SD_D3"
+		(at 88.9 36.83 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "f7ef92ea-74ef-4cc8-88a4-dc5995ef228f")
 	)
 	(symbol
 		(lib_id "power:+1V8")
@@ -4562,6 +4848,70 @@
 			(project "SerialServerBoard"
 				(path "/fff4edd7-7765-4881-b8c8-325c8be7c8ba/70988b15-c4e0-4a4b-8c11-4e6331245de1"
 					(reference "#PWR04")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 83.82 168.91 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "464441db-420d-46f1-b81f-20a9103c207f")
+		(property "Reference" "TP1"
+			(at 83.058 167.894 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "SoC OSC Out"
+			(at 80.518 170.942 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 83.82 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 83.82 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 83.82 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ea94b257-35a4-401a-84ce-544a279775af")
+		)
+		(instances
+			(project "SerialServerBoard"
+				(path "/fff4edd7-7765-4881-b8c8-325c8be7c8ba/70988b15-c4e0-4a4b-8c11-4e6331245de1"
+					(reference "TP1")
 					(unit 1)
 				)
 			)
